@@ -1,5 +1,4 @@
 import express, { Request, Response } from "express";
-import { TypeFlags } from "typescript";
 
 const router = express.Router();
 const users = [
