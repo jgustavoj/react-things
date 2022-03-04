@@ -6,7 +6,7 @@ export const App = () => {
   const [userInfo, setUserInfo] = useState("");
 
   useEffect(() => {
-    fetch("https://randomuser.me/api")
+    fetch("http://127.0.0.1:3001/api/users")
       .then((response) => {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -26,8 +26,7 @@ export const App = () => {
 
   return (
     <>
-      {/* counter */}
-      <div
+      {/* <div
         className="container"
         style={{ margin: "auto", width: "50%", marginTop: "5rem" }}>
         <div
@@ -47,7 +46,7 @@ export const App = () => {
           </button>
         </div>
       </div>
-      {/* CounterEnd */}
+       */}
 
       <pre>{userInfo}</pre>
     </>
